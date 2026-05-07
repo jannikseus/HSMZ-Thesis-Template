@@ -1,6 +1,6 @@
 # HSMZ Thesis Template
 
-Dieses Repository enthält eine LaTeX-Vorlage, die für Exposés, Hausarbeiten und Abschlussarbeiten an der Hochschule Mainz genutzt werden kann. Die Vorlage erfüllt die formalen Anforderungen, die im [Leitfaden der HS Mainz zur Anfertigung wissenschaftlicher Arbeiten (2024)](https://www.hs-mainz.de/fileadmin/Wirtschaft/Services/Pruefungsamt/pdf/Downloads/leitfaden/Leitfaden_wissenschaftlicher_Arbeiten_Deutsch.pdf) gelistet werden. 
+Dieses Repository enthält eine LaTeX-Vorlage, die für Exposés, Hausarbeiten und Abschlussarbeiten an der Hochschule Mainz genutzt werden kann. Die Vorlage erfüllt die formalen Anforderungen, die im [Leitfaden der HS Mainz zur Anfertigung wissenschaftlicher Arbeiten (2024)](https://www.hs-mainz.de/fileadmin/Wirtschaft/Services/Pruefungsamt/pdf/Downloads/leitfaden/Leitfaden_wissenschaftlicher_Arbeiten_Deutsch.pdf) gelistet werden.
 
 Diese Vorlage ist im Rahmen meiner eigenen Bachelorarbeit entstanden und soll nun anderen Studierenden Zeit sparen und die Nutzung von LaTeX vereinfachen. Beispiele von fertigen Dokumenten, die meine Vorlage verwenden, bieten die folgenden Repositories:
 
@@ -16,20 +16,20 @@ Die folgende Auflistung enthält einige der wichtigsten Features, die meine Vorl
 - Leichter Wechsel zwischen Struktur für das Exposé und Abschlussarbeit/Hausarbeit
 - Zentrale Anpassbarkeit von Metadaten (Name, Matrikelnummer, Titel, Betreuer etc.)
 - [Leitfaden zur Anfertigung von Abschlusarbeiten der Hochschule Mainz (2020)](https://www.hs-mainz.de/studium/services/wirtschaft/pruefungsmanagement/downloads/) wird eingehalten
-    - Titelseite mit allen geforderten Angaben
-    - Schriftbild und Ränder
-    - Formale Ordnung und Reihenfolge
-    - Seitennummerierung
-    - Vorlage für eidesstattliche Erklärung und Sperrvermerk der Hochschule Mainz
-    - Anhang mit Anhangsverzeichnis und fortlaufender römischer Nummerierung
+  - Titelseite mit allen geforderten Angaben
+  - Schriftbild und Ränder
+  - Formale Ordnung und Reihenfolge
+  - Seitennummerierung
+  - Vorlage für eidesstattliche Erklärung und Sperrvermerk der Hochschule Mainz
+  - Anhang mit Anhangsverzeichnis und fortlaufender römischer Nummerierung
 - Verzeichnisse für
-    - Abbildungen
-    - Tabellen
-    - Abkürzungen
-    - Symbole
-    - Formeln
-    - Algorithmen
-    - Listing (Quellcode)
+  - Abbildungen
+  - Tabellen
+  - Abkürzungen
+  - Symbole
+  - Formeln
+  - Algorithmen
+  - Listing (Quellcode)
 - Literaturverzeichnis mit BibLaTeX und Voreinstellungen für IEEE und APA
 - Listing zur Darstellung von Quellcode (über mehrere Seiten) mittels `minted`
 - Darstellung von Algorithmen mittels `algorithm2e`
@@ -45,9 +45,9 @@ Einen guten Einstieg in LaTeX bietet beispielsweise dieses [Tutorial von Overlea
 
 1. Repository als Zip herunterladen und in favorisierten LaTeX-Editor einbinden
 2. In der Datei `00_General/Metadata.tex` die Metadaten aktualisieren (Name, Matrikelnummer, Titel etc.)
-3. Entsprechend der Verwendung eine Hauptdatei wählen 
-    1. Bei einem Expose ist `Proposal.tex` zu verwenden und `Thesis.tex` zu löschen
-    2. Bei einer Haus-/Bachelor-/Masterarbeit ist `Thesis.tex` zu verwenden und `Proposal.tex` zu löschen
+3. Entsprechend der Verwendung eine Hauptdatei wählen
+   1. Bei einem Expose ist `Expose.tex` zu verwenden und `Thesis.tex` zu löschen
+   2. Bei einer Haus-/Bachelor-/Masterarbeit ist `Thesis.tex` zu verwenden und `Expose.tex` zu löschen
 4. Die gewählte Hauptdatei durchlesen und ggf. benötigte Abschnitte einblenden (z.B. Sperrvermerk)
 5. Zugehörige Datei im Verzeichnis `02_MainText` ansehen und losschreiben 🙂
 
@@ -55,7 +55,7 @@ Einen guten Einstieg in LaTeX bietet beispielsweise dieses [Tutorial von Overlea
 
 Dieser Abschnitt bietet einen Überblick über die Struktur der Vorlage und erklärt den Zweck der einzelnen Dateien. In den Dateien selbst ist jeweils ein Kommentar enthalten, der konkretere Informationen und Hinweise bietet.
 
-`Proposal.tex` Haupdatei für ein Expose, die dem LaTeX-Kompiler übergeben wird
+`Expose.tex` Haupdatei für ein Expose, die dem LaTeX-Kompiler übergeben wird
 
 `Thesis.tex` Haupdatei für eine Arbeit, die dem LaTeX-Kompiler übergeben wird
 
@@ -78,10 +78,10 @@ Verzeichnis `01_FrontMatter` enthält alle Dateien/Seiten, die dem eigentlichen 
 
 Verzeichnis `02_MainText` enthält den eigentlichen Inhalt der Arbeit
 
-- `00_ProposalContent.tex` Vorlage für ein Expose
+- `00_ExposeContent.tex` Vorlage für ein Expose
 - `00_ThesisContent.tex` Haupdatei der zu erstellenden Arbeit (enthält Beispiele zur Nutzung der Features der Vorlage)
 
-Verzeichnis `03_BackMatter` enthält alle Dateien, die den Anhang der Arbeit bilden 
+Verzeichnis `03_BackMatter` enthält alle Dateien, die den Anhang der Arbeit bilden
 
 - `01_Appendix.tex` definiert den Anhang und bindet ggf. weitere Seiten ein
 
@@ -106,20 +106,18 @@ Beim Schreiben meiner eigenen Bachelorarbeit mit dieser LaTeX-Vorlage waren insb
 
 ## Kurzanleitung Nutzung in Overleaf
 
-Wenn ihr Overleaf als LaTeX-Editor verwenden möchtet, könnt ihr folgende Anleitung verwenden, um direkt loszuschreiben: 
+Wenn ihr Overleaf als LaTeX-Editor verwenden möchtet, könnt ihr folgende Anleitung verwenden, um direkt loszuschreiben:
 
 1. Dieses Repository als Zip-Datei herunterladen
 2. Overleaf-Account anlegen
 3. In Overleaf mittels `New Project` ein neues Projekt anlegen und und anschließend bei `Upload Project` die heruntergeladene Zip-Datei auswählen
 
 ![Overleaf New Project](https://imgur.com/W0XkLiT.png)
-    
-4. In den Einstellungen des Projekts bei der Option `Main document` entweder `Thesis.tex` oder `Proposal.tex` wählen und die andere Datei löschen
 
+4. In den Einstellungen des Projekts bei der Option `Main document` entweder `Thesis.tex` oder `Expose.tex` wählen und die andere Datei löschen
 
-![Overleaf - Choose File](https://imgur.com/ybWe0rj.png)   
+![Overleaf - Choose File](https://imgur.com/ybWe0rj.png)  
 5. Projekt rekompilieren und losschreiben 🙂
-
 
 ## Nutzungbedingungen des Logos der Hochschule Mainz
 
