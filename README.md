@@ -7,7 +7,7 @@ Diese Vorlage ist im Rahmen meiner eigenen Bachelorarbeit entstanden und soll nu
 - [ThesisHSMZ-RLTicTacToe-Expose](https://github.com/JonasBingel/ThesisHSMZ-RLTicTacToe-Expose) Repository des Exposé zu meiner Bachelorarbeit
 - [ThesisHSMZ-RLTicTacToe](https://github.com/JonasBingel/ThesisHSMZ-RLTicTacToe) Repository meiner Bachelorarbeit
 
-Hinweis: Das Logo der Hochschule Mainz kann zentral in `Metadaten.tex` ausgetauscht werden, sodass auch Studierende anderer Hochschulen die Vorlage gerne verwenden können.
+Hinweis: Das Logo der Hochschule Mainz kann zentral in `00_General/Metadata.tex` ausgetauscht werden, sodass auch Studierende anderer Hochschulen die Vorlage gerne verwenden können.
 
 ## Features der Vorlage
 
@@ -44,48 +44,48 @@ Voraussetzung für die Nutzung dieser Vorlage ist ein grundlegendes Verständnis
 Einen guten Einstieg in LaTeX bietet beispielsweise dieses [Tutorial von Overleaf](https://www.overleaf.com/learn/latex/Tutorials).
 
 1. Repository als Zip herunterladen und in favorisierten LaTeX-Editor einbinden
-2. In der Datei 00_Allgemein/Metadaten.tex die Metadaten aktualisieren (Name, Matrikelnummer, Titel etc.)
+2. In der Datei `00_General/Metadata.tex` die Metadaten aktualisieren (Name, Matrikelnummer, Titel etc.)
 3. Entsprechend der Verwendung eine Hauptdatei wählen 
-    1. Bei einem Expose ist `Expose.tex` zu verwenden und `Arbeit.tex` zu löschen
-    2. Bei einer Haus-/Bachelor-/Masterarbeit ist `Arbeit.tex` zu verwenden und `Expose.tex` zu löschen
+    1. Bei einem Expose ist `Proposal.tex` zu verwenden und `Thesis.tex` zu löschen
+    2. Bei einer Haus-/Bachelor-/Masterarbeit ist `Thesis.tex` zu verwenden und `Proposal.tex` zu löschen
 4. Die gewählte Hauptdatei durchlesen und ggf. benötigte Abschnitte einblenden (z.B. Sperrvermerk)
-5. Zugehörige Datei im Verzeichnis 02_Textteil ansehen und losschreiben 🙂
+5. Zugehörige Datei im Verzeichnis `02_MainText` ansehen und losschreiben 🙂
 
 ## Struktur der Vorlage
 
 Dieser Abschnitt bietet einen Überblick über die Struktur der Vorlage und erklärt den Zweck der einzelnen Dateien. In den Dateien selbst ist jeweils ein Kommentar enthalten, der konkretere Informationen und Hinweise bietet.
 
-`Expose.tex` Haupdatei für ein Expose, die dem LaTeX-Kompiler übergeben wird
+`Proposal.tex` Haupdatei für ein Expose, die dem LaTeX-Kompiler übergeben wird
 
-`Arbeit.tex` Haupdatei für eine Arbeit, die dem LaTeX-Kompiler übergeben wird
+`Thesis.tex` Haupdatei für eine Arbeit, die dem LaTeX-Kompiler übergeben wird
 
-Verzeichnis `00_Allgemein` enthält alle Dateien, die zur Konfiguration von TeX und der Vorlage verwendet werden
+Verzeichnis `00_General` enthält alle Dateien, die zur Konfiguration von TeX und der Vorlage verwendet werden
 
-- `Befehle.tex` Definition von Custom-Anweisungen
-- `Metadaten.tex` Metadaten zur Arbeit, Autor, Betreuer und Hochschule (inkl. Logo)
-- `Nomenklatur.tex` Nomenklatur, d.h. verwendete Symbole in der Arbeit (Symbolverzeichnis)
+- `Commands.tex` Definition von Custom-Anweisungen
+- `Metadata.tex` Metadaten zur Arbeit, Autor, Betreuer und Hochschule (inkl. Logo)
+- `Nomenclature.tex` Nomenklatur, d.h. verwendete Symbole in der Arbeit (Symbolverzeichnis)
 - `Packages.tex` LaTeX-Packages und deren Konfiguration
 - `ToDo.tex` Eine To-do-Liste sowie allgemeine To-dos, die mittels Package `todonotes` erstellt werden
 
-Verzeichnis `01_Vortext` enthält alle Dateien/Seiten, die dem eigentlichen Textteil vorangestellt sind
+Verzeichnis `01_FrontMatter` enthält alle Dateien/Seiten, die dem eigentlichen Textteil vorangestellt sind
 
-- `01_Sperrvermerk.tex` Optionaler Sperrvermerk, der die erste Seite bildet
-- `02_Titelseite.tex` Titelseite des Exposes bzw. der Arbeit
-- `03_Erklaerung.tex` Eidesstattliche Erklärung
+- `01_EmbargoNotice.tex` Optionaler Sperrvermerk, der die erste Seite bildet
+- `02_TitlePage.tex` Titelseite des Exposes bzw. der Arbeit
+- `03_Declaration.tex` Eidesstattliche Erklärung
 - `04_ManagementSummary.tex` Management Summary (Abstract) zur Arbeit
-- `05_Verzeichnisse.tex` Konfiguration der Verzeichnisse, die angezeigt werden sollen und deren Reihenfolge
-- `06_Abkuerzungen.tex` Abkürzungen, die in der Arbeit genutzt und im Abkürzungsverzeichnis gelistet werden
+- `05_Lists.tex` Konfiguration der Verzeichnisse, die angezeigt werden sollen und deren Reihenfolge
+- `06_Abbreviations.tex` Abkürzungen, die in der Arbeit genutzt und im Abkürzungsverzeichnis gelistet werden
 
-Verzeichnis `02_Texttteil` enthält den eigentlichen Inhalt der Arbeit
+Verzeichnis `02_MainText` enthält den eigentlichen Inhalt der Arbeit
 
-- `00_Inhalt_Expose.tex` Vorlage für ein Expose
-- `00_Inhalt_Arbeit.tex` Haupdatei der zu erstellenden Arbeit (enthält Beispiele zur Nutzung der Features der Vorlage)
+- `00_ProposalContent.tex` Vorlage für ein Expose
+- `00_ThesisContent.tex` Haupdatei der zu erstellenden Arbeit (enthält Beispiele zur Nutzung der Features der Vorlage)
 
-Verzeichnis `03_Nachtext` enthält alle Dateien, die den Anhang der Arbeit bilden 
+Verzeichnis `03_BackMatter` enthält alle Dateien, die den Anhang der Arbeit bilden 
 
-- `01_Anhang.tex` definiert den Anhang und bindet ggf. weitere Seiten ein
+- `01_Appendix.tex` definiert den Anhang und bindet ggf. weitere Seiten ein
 
-Verzeichnis `04_Artefakte` enthält alle Artefakte, die in der Arbeit verwendet werden. Zur besseren Übersichtlichkeit gibt es Unterverzeichnisse für die einzelnen Artefaktarten.
+Verzeichnis `04_Artifacts` enthält alle Artefakte, die in der Arbeit verwendet werden. Zur besseren Übersichtlichkeit gibt es Unterverzeichnisse für die einzelnen Artefaktarten.
 
 ## Nutzungshinweise
 
@@ -114,7 +114,7 @@ Wenn ihr Overleaf als LaTeX-Editor verwenden möchtet, könnt ihr folgende Anlei
 
 ![Overleaf New Project](https://imgur.com/W0XkLiT.png)
     
-4. In den Einstellungen des Projekts bei der Option `Main document` entweder `Arbeit.tex` oder `Expose.tex` wählen und die andere Datei löschen
+4. In den Einstellungen des Projekts bei der Option `Main document` entweder `Thesis.tex` oder `Proposal.tex` wählen und die andere Datei löschen
 
 
 ![Overleaf - Choose File](https://imgur.com/ybWe0rj.png)   

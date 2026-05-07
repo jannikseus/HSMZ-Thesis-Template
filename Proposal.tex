@@ -5,7 +5,7 @@
 % -----------------------------------------------------------------------------------------
 
 % Erklärender Text zu dieser Datei --------------------------------------------------------
-% Die Datei Arbeit.tex ist die Hauptdatei, die dem LaTeX-Kompiler übergeben wird.
+% Die Datei Proposal.tex ist die Hauptdatei, die dem LaTeX-Kompiler übergeben wird.
 % Diese Datei ist zu verwenden, wenn das Expose erstellt werden soll.
 % In dieser Datei wird 
 %  - das Dokument erstellt und alle anderen tex-Dateien werden geladen.
@@ -32,9 +32,9 @@ overfullrule, % entfernen nach abschluss der bearbeitung
 % %BCOR=korrektur, % absoluter Wert der Bindekorrektur
 }
 
-\include{00_Allgemein/Metadaten}
-\include{00_Allgemein/Packages}
-\include{00_Allgemein/Befehle}
+\include{00_General/Metadata}
+\include{00_General/Packages}
+\include{00_General/Commands}
 
 % Typesetting options
 
@@ -49,15 +49,15 @@ overfullrule, % entfernen nach abschluss der bearbeitung
 \newcounter{romanConsecutive}
 
 \begin{document}
-\include{00_Allgemein/ToDo}
+\include{00_General/ToDo}
 
 \pagestyle{empty}
 \renewcommand*{\chapterpagestyle}{empty}
 % Einkommentieren, wenn Sperrvermerk notwendig ist 
-%\include{01_Vortext/01_Sperrvermerk}
-\include{01_Vortext/02_Titelseite}
+%\include{01_FrontMatter/01_EmbargoNotice}
+\include{01_FrontMatter/02_TitlePage}
 % Einkommentieren, wenn Erklärung notwendig sein sollte
-%\include{01_Vortext/03_Erklaerung}
+%\include{01_FrontMatter/03_Declaration}
 
 \pagestyle{plain}
 \renewcommand*{\chapterpagestyle}{plain}
@@ -65,7 +65,7 @@ overfullrule, % entfernen nach abschluss der bearbeitung
 
 \setcounter{romanConsecutive}{\value{page}}
 \pagenumbering{arabic}
-\include{02_Textteil/00_Inhalt_Expose}
+\include{02_MainText/00_ProposalContent}
 
 \pagenumbering{Roman}
 
