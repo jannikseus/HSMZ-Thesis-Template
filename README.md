@@ -1,6 +1,6 @@
-# HSMZ Thesis Template
+# HSMZ Thesis Template - EN
 
-Dieses Repository enthält eine LaTeX-Vorlage, die für Exposés, Hausarbeiten und Abschlussarbeiten an der Hochschule Mainz genutzt werden kann. Die Vorlage erfüllt die formalen Anforderungen, die im [Leitfaden der HS Mainz zur Anfertigung wissenschaftlicher Arbeiten (2024)](https://www.hs-mainz.de/fileadmin/Wirtschaft/Services/Pruefungsamt/pdf/Downloads/leitfaden/Leitfaden_wissenschaftlicher_Arbeiten_Deutsch.pdf) gelistet werden.
+Dieses Repository enthält eine für englisch (statt deutsch des geforkten Repos) angepasste eine LaTeX-Vorlage, die für Exposés, Hausarbeiten und Abschlussarbeiten an der Hochschule Mainz genutzt werden kann. Erklärungen sind trotzdem noch auf deutsch. Die Vorlage erfüllt die formalen Anforderungen, die im [Leitfaden der HS Mainz zur Anfertigung wissenschaftlicher Arbeiten (2024)](https://www.hs-mainz.de/fileadmin/Wirtschaft/Services/Pruefungsamt/pdf/Downloads/leitfaden/Leitfaden_wissenschaftlicher_Arbeiten_Deutsch.pdf) gelistet werden.
 
 Diese Vorlage ist im Rahmen meiner eigenen Bachelorarbeit entstanden und soll nun anderen Studierenden Zeit sparen und die Nutzung von LaTeX vereinfachen. Beispiele von fertigen Dokumenten, die meine Vorlage verwenden, bieten die folgenden Repositories:
 
